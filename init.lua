@@ -155,6 +155,9 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
 
+-- Disable persistend undo
+vim.opt.undofile = false
+
 -- Show which line your cursor is on
 vim.o.cursorline = true
 
@@ -674,6 +677,7 @@ require('lazy').setup({
         -- clangd = {},
         gopls = {},
         ts_ls = {},
+        zls = {},
         tailwindcss = {},
         -- pyright = {},
         -- rust_analyzer = {},
